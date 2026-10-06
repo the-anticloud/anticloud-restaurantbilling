@@ -1,0 +1,245 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "RESTAURANTBILLING",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\POS_SYSTEMS\\RESTAURANTBILLING\\UPSTREAM_CLONE",
+  "git": {
+   "head": "b9c2e02a1442ca71c127b0d0d22579c81466733a",
+   "url": "https://github.com/Brynlai/RestaurantProject",
+   "branch": "main",
+   "committed_at": "2026-09-29T11:06:59+04:00",
+   "sha_verified_from": "local clone .git file read (no .git dir in clone)"
+  }
+ },
+ "metrics": {
+  "files_total": 238,
+  "source_files_scanned": 114,
+  "lines_of_code": 13482,
+  "languages": {
+   ".php": 112,
+   ".htm": 59,
+   ".png": 23,
+   ".map": 20,
+   ".txt": 7,
+   ".css": 5,
+   "(none)": 3,
+   ".jpg": 3,
+   ".js": 2,
+   ".md": 1,
+   ".mp4": 1,
+   ".ttf": 1,
+   ".z": 1
+  }
+ },
+ "licence": {
+  "spdx": "Apache-2.0",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 0,
+  "unique": 0,
+  "by_ecosystem": {},
+  "list": []
+ },
+ "owasp_top10": {
+  "total_findings": 8,
+  "files_with_findings": 8,
+  "severity": {
+   "high": 4,
+   "medium": 0,
+   "low": 4
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A03-Injection": {
+    "count": 4,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "customerSide/CustomerReservation/reservePage.php",
+      "line": 82,
+      "cwe": "CWE-120",
+      "snippet": "$time = sprintf('%02d:%02d:00', $hour, $minute);"
+     },
+     {
+      "severity": "high",
+      "file": "customerSide/components/footer.php",
+      "line": 262,
+      "cwe": "CWE-78",
+      "snippet": "$(document).ready(function(){"
+     },
+     {
+      "severity": "high",
+      "file": "adminSide/reservationsCrud/createReservation.php",
+      "line": 45,
+      "cwe": "CWE-120",
+      "snippet": "$time = sprintf('%02d:%02d:00', $hour, $minute);"
+     },
+     {
+      "severity": "high",
+      "file": "adminSide/posBackend/fpdf186/fpdf.php",
+      "line": 315,
+      "cwe": "CWE-120",
+      "snippet": "$this->_out(sprintf('%.2F w',$lw*$this->k));"
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 0,
+    "findings": []
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 0,
+    "findings": []
+   },
+   "A06-VulnerableComponents": {
+    "count": 0,
+    "findings": []
+   },
+   "A07-AuthFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 4,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "customerSide/CustomerReservation/reservationReceipt.php",
+      "line": 35,
+      "cwe": "CWE-319",
+      "snippet": "$this->Cell(0, 10, $logoText, 0, 1, 'C', false, 'http://localhost/RestaurantProject/customerSide/home/home.php#hero');"
+     },
+     {
+      "severity": "low",
+      "file": "customerSide/components/header.php",
+      "line": 68,
+      "cwe": "CWE-319",
+      "snippet": "$current_url = \"http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]\";"
+     },
+     {
+      "severity": "low",
+      "file": "adminSide/reservationsCrud/reservationReceipt.php",
+      "line": 35,
+      "cwe": "CWE-319",
+      "snippet": "$this->Cell(0, 10, $logoText, 0, 1, 'C', false, 'http://localhost/RestaurantProject/customerSide/home/home.php#hero');"
+     },
+     {
+      "severity": "low",
+      "file": "adminSide/posBackend/fpdf186/tutorial/tuto6.php",
+      "line": 94,
+      "cwe": "CWE-319",
+      "snippet": "text, such as <a href=\"http://www.fpdf.org\">www.fpdf.org</a>, or on an image: click on the logo.';"
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 0,
+  "files_with_findings": 0,
+  "severity": {
+   "high": 0,
+   "medium": 0,
+   "low": 0
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM03-SupplyChain": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM04-DataPoisoning": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM09-Misinformation": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:fed4fda9-755c-5670-bda1-edc48d4c80c3",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-06T06:27:32Z",
+   "component": {
+    "type": "application",
+    "name": "RESTAURANTBILLING",
+    "version": "83b357604d34",
+    "bom-ref": "pkg:generic/anticloud/RESTAURANTBILLING@83b357604d34",
+    "purl": "pkg:generic/anticloud/RESTAURANTBILLING@83b357604d34",
+    "licenses": [
+     {
+      "license": {
+       "id": "Apache-2.0"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "<contaminated-url-removed>"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": []
+ },
+ "elapsed_seconds": 45.14
+}
