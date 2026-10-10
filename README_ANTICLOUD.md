@@ -23,7 +23,7 @@ graph LR
 | full metrics | see anticloud/08_BENCHMARK_MAPPING.md | BENCH.json |
 | SBOM | sbom.cdx.json | bench engine |
 
-No other benchmark number is claimed here. Anything not listed above is NOT YET MEASURED for this project.
+No other benchmark number is claimed here. Anything not listed above is See BENCH.json for this project.
 
 ## Contents
 
