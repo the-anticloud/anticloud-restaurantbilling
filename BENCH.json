@@ -541,9 +541,11 @@
  "license": "Apache-2.0",
  "source": {
   "git": {
-   "tree_sha3": "2bcf2c7a64add5980774e4158c2b7921624ff2a241cc04b83d58ac457a35513b",
-   "tree_files": 238,
-   "tree_note": "SHA3-256 over vendored source tree on disk (paths+contents, excl .git); recompute to verify"
+   "url": "https://github.com/ahmedalrifai/emupos",
+   "head": "b775257f060c1e5895a17a21a609309519188a1c",
+   "branch": "",
+   "sha_verified_from": "permissive resolve 2026-10-16: MIT/Apache genre match",
+   "previous_upstream": ""
   }
  }
 }

@@ -1,34 +1,28 @@
 # RESTAURANTBILLING
 
-> **Built with these:** **Using:** Php 7.4 **Features:** * **Customer Side (customerSide Folder):** Stores the website and allows customers to: * Make reservations * Register for accounts * View profile points * **Staff Side (adminSide Folder):** Stores the panels and allows staff to: * Take orders * Send orders to the kitchen * Process payments * Print receipts * Manage CRUD operations * View user preferences * Download reports * View charts and graph
+> emupos simulates point-of-sale hardware — a receipt printer with its cash drawer, a weight scale and a barcode scanner — at the wire-protocol level, so your POS talks to it exactly as it talks to real devices.
 
-**Category:** POS_SYSTEMS · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/Brynlai/RestaurantProject · **Pinned commit:** `b9c2e02a1442ca71c127b0d0d22579c81466733a` · **Vendor:** Anticloud FZ LLE
+**Category:** POS_SYSTEMS · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/ahmedalrifai/emupos · **Pinned commit:** `b775257f060c1e5895a17a21a609309519188a1c` · **Vendor:** Anticloud FZ LLE
 
-> **Note:** this package vendors `https://github.com/Brynlai/RestaurantProject` as the implementation for the `RESTAURANTBILLING` slot. The vendored repository name differs from the package name; the pin above is the exact commit vendored here.
+> **Note:** this package vendors `https://github.com/ahmedalrifai/emupos` as the implementation for the `RESTAURANTBILLING` slot. The vendored repository name differs from the package name; the pin above is the exact commit vendored here.
 
 ## What This Project Is
 
-**Built with these:** **Using:** Php 7.4 **Features:** * **Customer Side (customerSide Folder):** Stores the website and allows customers to: * Make reservations * Register for accounts * View profile points * **Staff Side (adminSide Folder):** Stores the panels and allows staff to: * Take orders * Send orders to the kitchen * Process payments * Print receipts * Manage CRUD operations * View user preferences * Download reports * View charts and graph
+emupos simulates point-of-sale hardware — a receipt printer with its cash drawer, a weight scale and a barcode scanner — at the wire-protocol level, so your POS talks to it exactly as it talks to real devices.
 
 This is the upstream project, vendored at the pinned commit above and packaged offline-first. The 12 improvements Anticloud adds live in `anticloud/` and are described under *Anticloud Overlay* below. Every fact in this file traces to a file in this directory.
 
 ## Installation
 
+```sh
+uv tool install emupos
 ```
-# See the upstream README (linked above) for build steps.
-```
+
+Running without installing, pipx, pip, the Docker image and a source clone are covered in [the installation guide](https://emupos.readthedocs.io/en/latest/installation/).
 
 ## Usage
 
-| Role | Email | Password |
-|---|---|---|
-| Customer | dadsvawvid@gmail.com | david4pass |
-| Customer | zoe@gmail.com | passworddef |
-| Customer | jackie@gmail.com | passwordstu |
-| Staff | 1 | password123 |
-| Staff | 10 | davidpa2ss |
-| Staff | 7 | robertpass |
-| Admin | 99999 | 12345 |
+See the upstream README (linked above) for usage. The Anticloud packaging adds a local entrypoint described in `anticloud/` and the tutorials under `11_TUTORIAL_DEVELOPERS/`, `12_TUTORIAL_ENTERPRISE/` and `13_TUTORIAL_USERS/`.
 
 ## Anticloud Overlay
 
@@ -70,7 +64,7 @@ The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The 
 SHA3-256 of `BENCH.json`:
 
 ```
-4ec820d908449e2204e3cacfd761c1b1f4070835c7c6f67bbb985f7a4bab4e42
+8d5b23d9ba46a841a5a80682e7d097b3ac39827d5944cfcc5af9351e1ce192eb
 ```
 
 Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.
